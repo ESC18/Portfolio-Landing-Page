@@ -32,8 +32,13 @@ header {
 body {
     background-color: #151515;
     height: 10000px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 #Placeholder {
     position: absolute;
     top: -7vw;
@@ -49,11 +54,33 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 20;
+    transition: all 0.15s;
+}
+#CircleAnim::after {
+    position: absolute;
+    content: "Hover";
+    top: 80px;
+    left:-17px;
+    animation-name: ArrowFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    color: #FF6600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #CircleAnim:hover + #Placeholder {
     filter: blur(0px) grayscale(0%) contrast(90%);
     transition: all 0.4s;
 }
+#CircleAnim:hover {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+    opacity: 0%;
+    color: rgba(255, 255, 255, 0);
+}
+
 .SideArrow {
     position: absolute;
     width: 30px;
@@ -77,6 +104,9 @@ body {
     0% {opacity:0%;}
     50% {opacity:100%;}
     100% {opacity:0%;}
+}
+#CircleAnim:hover + .SideArrow {
+    display: none;
 }
 footer {
     position: absolute;

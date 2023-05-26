@@ -4,17 +4,10 @@
     border: 0;
     box-sizing: border-box;
 }
-ul {
-    list-style: none;
-}
-main {
-    width: 100%;
-    height: 1000%;
-    background-color: blue;
-}
-#content {
-    width: 100%;
-    height: 1000px;
+@keyframes ArrowFade {
+    0% {opacity:0%;}
+    50% {opacity:100%;}
+    100% {opacity:0%;}
 }
 header {
     position: absolute;
@@ -54,6 +47,37 @@ header {
     transform: translate(-50%,-50%);
 
     z-index: 30;
+}
+.Triangle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(50% 55%, 0% 100%, 100% 100%);
+    background-color: #151515;
+    z-index: 30;
+    top: 50%;
+    left: 47.4%;
+    transform: rotate(180deg) translate(-50%,-50%);
+    animation-name: ArrowFade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.T2 {
+    top: 20%;
+    animation-delay: 0s;
+}
+.T3 {
+    top: 35%;
+    animation-delay: 1s;
+}
+.T4 {
+    top: 65%;
+    animation-delay: 3s;
+}
+.T5 {
+    top: 80%;
+    animation-delay: 4s;
 }
 body {
     background-color: #151515;
@@ -117,13 +141,6 @@ body::-webkit-scrollbar {
     transform: rotate(-90deg);
     background-color: #FF6600;
 }
-@keyframes ArrowFade {
-    0% {opacity:0%;}
-    50% {opacity:100%;}
-    100% {opacity:0%;}
-}
-
-
 .Navbar {
     width: 100%;
     background-color: #000000;
@@ -132,12 +149,9 @@ body::-webkit-scrollbar {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Navbarlinks {
-    float: left;
-    padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
-    width: 25%; /* Four links of equal widths */
+    font-size: 27px;
     text-align: center;   
 }
 a {

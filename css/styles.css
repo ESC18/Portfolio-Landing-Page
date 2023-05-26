@@ -146,16 +146,11 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px auto;
-    overflow: auto;
 }
 .Navbarlinks {
-    color: white;
     text-decoration: none;
     font-size: 27px;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
 }
 .Navbarlinks li {
     display: list-item;

@@ -72,6 +72,7 @@ body::-webkit-scrollbar {
 #CircleAnim:hover + #Placeholder {
     filter: blur(0px) grayscale(0%) contrast(90%);
     transition: all 0.4s;
+    z-index: 10;
 }
 #CircleAnim:hover {
     width: 100%;
@@ -85,7 +86,7 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color:aliceblue;
+    background-color:#FF6600;
     top: 48.5%;
     left: 45%;
     transform: translate(-50%,-50%);
@@ -99,6 +100,7 @@ body::-webkit-scrollbar {
 #SideArrow2 {
     left: 53.5%;
     transform: rotate(-90deg);
+    background-color: #FF6600;
 }
 @keyframes ArrowFade {
     0% {opacity:0%;}

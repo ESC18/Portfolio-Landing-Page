@@ -147,7 +147,6 @@ body::-webkit-scrollbar {
     top: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px auto;
-    border: 1px solid #fff;
     overflow: auto;
 }
 .Navbarlinks {
@@ -168,7 +167,15 @@ body::-webkit-scrollbar {
 }
 .Navbarlinks li a {
     display: block;
-    border: 1px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transition: all 0.2s;
+}
+.Navbarlinks li a:hover {
+    border: 5px solid #FF6600;
+    background-color: aliceblue;
+    font-size: 35px;
+    transition: all 0.2s;
 }
 a {
     text-decoration: none;

@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
 }
+/*Keyframe animation for Triangles & 'Hover' on the top of the page.*/
 @keyframes ArrowFade {
     0% {opacity:0%;}
     50% {opacity:100%;}
@@ -47,7 +48,9 @@ header {
     transform: translate(-50%,-50%);
 
     z-index: 30;
-}
+} /*Lines 54-84 are utilized for the small black triangles used to guide user down the page upon Square hover.*/
+
+/*This code struggles with being responive - causes triangles to be visible when screen shrinks due to 'SquareAnim' going under them.*/
 .Triangle {
     position: absolute;
     width: 50px;
@@ -82,6 +85,7 @@ header {
 body {
     background-color: #151515;
     height: 10000px;
+    /*Overflow hidden due to Chrome creating Unnecessary scrollbars*/
     -ms-overflow-style: none;  
     scrollbar-width: none;
     overflow-x: hidden;
@@ -89,6 +93,7 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+/*Square at top of page user hovers over to see name and triangles*/
 #SquareAnim {
     position: absolute;
     width: 50px;
@@ -119,6 +124,9 @@ body::-webkit-scrollbar {
     opacity: 100%;
     color: rgba(255, 255, 255, 0);
 }
+/*CSS rule for two orange triangles next to 'SquareAnim' Square at top of page.*/
+
+/*This code struggles with being responsive - triangles merge into 'SquareAnim'*/
 .SideArrow {
     position: absolute;
     width: 30px;
@@ -135,6 +143,7 @@ body::-webkit-scrollbar {
     animation-iteration-count: infinite;
     z-index: 10;
 }
+/*Orange Triangle on the right side of 'SquareAnim'*/
 #SideArrow2 {
     left: 53.5%;
     transform: rotate(-90deg);
@@ -147,9 +156,10 @@ body::-webkit-scrollbar {
     top: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*This targets Navbar UL*/
 .Navbarlinks {
     text-decoration: none;
-    font-size: 27px;
+    font-size: 35px;
     list-style: none;
 }
 .Navbarlinks li {
@@ -169,9 +179,10 @@ body::-webkit-scrollbar {
 .Navbarlinks li a:hover {
     border: 5px solid #FF6600;
     background-color: aliceblue;
-    font-size: 35px;
+    font-size: 45px;
     transition: all 0.2s;
 }
+/*Lines 186-200 are for making anchor tags not have any additional decor or change colors upon hover/active/link/visited.*/
 a {
     text-decoration: none;
 }
@@ -187,6 +198,22 @@ a:active {
 a:hover {
     color: #ff3c00;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     position: absolute;
     width: 100%;

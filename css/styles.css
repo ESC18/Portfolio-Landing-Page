@@ -423,14 +423,50 @@ a:hover {
     background-color: #df293500;
     z-index: 30;
 }
-
+.SCProjectTitle {
+    position: absolute;
+    padding-left: 39%;
+    padding-top: 7.5vw;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 65px;
+    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+.SCProjectText {
+    position: absolute;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 20%;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 25px;
+    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+    text-align: center;
+}
+.SCProjectFiller {
+    position: absolute;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 32.5%;
+    font-family:Flow Circular;
+    font-size: 25px;
+    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+    text-align: center;
+}
 
 .PortfolioProject {
     position: absolute;
     top: 34vw;
     left: 2.5vw;
     width: 30vw;
-    height: 40%;
+    height: 25vw;
     background-color: #DF2935;
 }
 .PortfolioPhoto {
@@ -442,7 +478,7 @@ a:hover {
     top: 34vw;
     left: 33.25vw;
     width: 30vw;
-    height: 40%;
+    height: 25vw;
     background-color: #06AED5;
     
 }
@@ -457,7 +493,7 @@ a:hover {
     top: 34vw;
     left: 64vw;
     width: 30vw;
-    height: 40%;
+    height: 25vw;
     background-color: #000000;
 
 }

@@ -251,6 +251,13 @@ a:hover {
     width: 100%;
     z-index: 20;
 }
+.image {
+    transition: all 0.2s;
+}
+.image:hover {
+    filter: brightness(115%) saturate(115%);
+    transition: 0.2s;
+}
 /*This Section forward is for the "About Me" Section*/
 .AboutMe {
     position: absolute;

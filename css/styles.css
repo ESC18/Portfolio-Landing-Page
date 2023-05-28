@@ -3,7 +3,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background-color: #DF2935;
 }
 /*Keyframe animation for Triangles & 'Hover' on the top of the page.*/
 @keyframes ArrowFade {
@@ -104,7 +103,7 @@ header {
     animation-delay: 4s;
 }
 body {
-    background-color: #15151546;
+    background-color: #151515;
     height: 3000px;
     /*Overflow hidden due to Chrome creating Unnecessary scrollbars*/
     -ms-overflow-style: none;  

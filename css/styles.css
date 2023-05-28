@@ -104,7 +104,7 @@ header {
 }
 body {
     background-color: #151515;
-    height: 10000px;
+    height: 4000px;
     /*Overflow hidden due to Chrome creating Unnecessary scrollbars*/
     -ms-overflow-style: none;  
     scrollbar-width: none;
@@ -176,7 +176,7 @@ body::-webkit-scrollbar {
 nav {
     position: absolute;
     top:100%;
-    height: 10000px;
+    height: 3900px;
     width: 100%;
     background-color: #000000;
 }
@@ -238,7 +238,7 @@ a:hover {
 .Underlay{
     position: sticky;
     width: 100%;
-    height: 5%;
+    height: 12.5%;
     background: linear-gradient(0deg,#F3B700,#F18701,#DF2935,#961f01,#961f01,#DF2935,#F18701,#F3B700);
     background-size: 300% 700%;
     animation:SquareAnimColor;
@@ -259,7 +259,7 @@ a:hover {
     top:105%;
     height: 1000px;
     width: 100%;
-    background-color: #21d19f86;
+    background-color: #21d19f00;
     z-index: 2000;
 }
 .AboutSCTitle {
@@ -305,10 +305,10 @@ a:hover {
 
 .Education {
     position: absolute;
-    top:240%;
+    top:210%;
     height: 100%;
     width: 100%;
-    background-color: #06afd559;
+    background-color: #06afd500;
     z-index: 20000;
 } 
 
@@ -317,10 +317,10 @@ a:hover {
 
 .MyProjects {
     position: absolute;
-    top:340%;
+    top:310%;
     height: 100%;
     width: 100%;
-    background-color: #df293588;
+    background-color: #df293500;
     z-index: 20000;
 }
 
@@ -336,6 +336,6 @@ footer {
     width: 100%;
     height:500px;
     background-color: rgb(0, 0, 0);
-    top: 11000px;
+    top: 5000px;
     z-index: 500;
 }

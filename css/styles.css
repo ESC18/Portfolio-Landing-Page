@@ -425,6 +425,46 @@ a:hover {
 }
 
 
+.PortfolioProject {
+    position: absolute;
+    top: 34vw;
+    left: 2.5vw;
+    width: 30vw;
+    height: 40%;
+    background-color: #DF2935;
+}
+.PortfolioPhoto {
+    width: 100%;
+}
+
+.ResortProject {
+    position: absolute;
+    top: 34vw;
+    left: 33.25vw;
+    width: 30vw;
+    height: 40%;
+    background-color: #06AED5;
+    
+}
+.ResortPhoto {
+    position: absolute;
+    width: 100%;
+    top: 38%;
+}
+
+.BoringProject {
+    position: absolute;
+    top: 34vw;
+    left: 64vw;
+    width: 30vw;
+    height: 40%;
+    background-color: #000000;
+
+}
+.BoringPhoto {
+    width: 100%;
+}
+
 
 
 

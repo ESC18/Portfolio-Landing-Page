@@ -235,6 +235,12 @@ a:active {
 a:hover {
     color: #ff3c00;
 }
+.Content {
+    position: absolute;
+    width: 100%;
+    top: 105%;
+    height: 2000px;
+}
 .Underlay{
     position: sticky;
     width: 100%;
@@ -260,11 +266,10 @@ a:hover {
 }
 /*This Section forward is for the "About Me" Section*/
 .AboutMe {
-    position: absolute;
-    top:105%;
-    height: 75%;
+    position: relative;
+    height: 43.5vw;
     width: 100%;
-    background-color: #21d19f00;
+    background-color: #21d19f79;
     z-index: 30;
 }
 .AboutSCTitle {
@@ -272,7 +277,7 @@ a:hover {
     padding-left: 81%;
     padding-top: 3.5vw;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 65px;
+    font-size: 3.4vw;
     background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -285,7 +290,7 @@ a:hover {
     padding-right: 3.75%;
     text-align: right;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -298,7 +303,7 @@ a:hover {
     padding-right: 3.90%;
     text-align: right;
     font-family: Flow Circular;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#21D19F,#06AED5,#4357AD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -344,19 +349,18 @@ a:hover {
 
 
 .Education {
-    position: absolute;
-    top:180%;
-    height: 75%;
+    position: relative;
+    height: 30%;
     width: 100%;
-    background-color: #06afd500;
+    background-color: #06afd55e;
     z-index: 30;
 }
 .AboutEDUTitle {
     position: absolute;
     padding-left: 7%;
-    padding-top: 7.5vw;
+    padding-top: 1.5vw;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 65px;
+    font-size: 3.4vw;
     background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -365,11 +369,11 @@ a:hover {
 .AboutEDUFiller {
     position: absolute;
     padding-left: 7.25vw;
-    top: 29.5vw;
+    top: 23vw;
     padding-right: 55vw;
     text-align: left;
     font-family: Flow Circular;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -377,12 +381,12 @@ a:hover {
 }
 .AboutEDUText {
     position: absolute;
-    top: 11vw;
+    top: 5vw;
     padding-right: 55vw;
     padding-left:7vw;
     text-align: left;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -390,24 +394,24 @@ a:hover {
 }
 .WestBuilding {
     position: absolute;
-    top: 18vw;
-    left: 65%;
+    top: 11vw;
+    left: 67vw;
     border-radius: 10px;
     z-index: 30;
     width: 30%;
 }
 .WestBand {
     position: absolute;
-    top: 23.5vw;
-    left: 48.5%;
+    top: 16.5vw;
+    left: 51vw;
     border-radius: 10px;
     z-index: 30;
     width: 15%;
 }
 .WestAlbanyLogo {
     position: absolute;
-    top: 18vw;
-    left: 55.5%;
+    top: 11vw;
+    left: 58vw;
     border-radius: 10px;
     z-index: 30;
     width: 8%;
@@ -416,11 +420,10 @@ a:hover {
 
 
 .MyProjects {
-    position: absolute;
-    top:255%;
+    position: relative;
     height: 125%;
     width: 100%;
-    background-color: #df293500;
+    background-color: #df29357a;
     z-index: 30;
 }
 .SCProjectTitle {
@@ -428,7 +431,7 @@ a:hover {
     padding-left: 39%;
     padding-top: 7.5vw;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 65px;
+    font-size: 3.4vw;
     background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -440,7 +443,7 @@ a:hover {
     padding-right: 7%;
     top: 20%;
     font-family:'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -451,9 +454,9 @@ a:hover {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
-    top: 32.5%;
+    top: 33%;
     font-family:Flow Circular;
-    font-size: 25px;
+    font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

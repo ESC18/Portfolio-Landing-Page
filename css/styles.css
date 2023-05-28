@@ -238,12 +238,10 @@ a:hover {
 .Underlay{
     position: sticky;
     width: 100%;
-    height: 28vw;
-    background: linear-gradient(0deg,#F3B700,#F18701,#DF2935,#961f01,#961f01,#DF2935,#F18701,#F3B700);
-    background-size: 300% 700%;
-    animation:SquareAnimColor;
-    animation-duration: 240s;
-    animation-iteration-count: infinite;
+    height: 27.5vw;
+    background: linear-gradient(180deg,#F3B700,#F18701,#DF2935,#961f01);
+    background-size: 100% 150%;
+
     z-index: 1;
     top: 0;
 }
@@ -257,14 +255,14 @@ a:hover {
 .AboutMe {
     position: absolute;
     top:105%;
-    height: 1000px;
+    height: 75%;
     width: 100%;
     background-color: #21d19f00;
     z-index: 30;
 }
 .AboutSCTitle {
     position: absolute;
-    padding-left: 75%;
+    padding-left: 81%;
     padding-top: 3.5vw;
     font-family:'Josefin Sans', sans-serif;
     font-size: 65px;
@@ -277,7 +275,7 @@ a:hover {
     position: absolute;
     padding-left: 45%;
     top: 7vw;
-    padding-right: 9.5%;
+    padding-right: 3.75%;
     text-align: right;
     font-family:'Josefin Sans', sans-serif;
     font-size: 25px;
@@ -289,12 +287,12 @@ a:hover {
 .FillerSCText {
     position: absolute;
     padding-left: 45%;
-    top: 22.5vw;
-    padding-right: 9.5%;
+    top: 21vw;
+    padding-right: 3.90%;
     text-align: right;
     font-family: Flow Circular;
     font-size: 25px;
-    background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
+    background: -webkit-linear-gradient(90deg,#21D19F,#06AED5,#4357AD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
@@ -340,20 +338,80 @@ a:hover {
 
 .Education {
     position: absolute;
-    top:210%;
-    height: 100%;
+    top:180%;
+    height: 75%;
     width: 100%;
     background-color: #06afd500;
     z-index: 30;
+}
+.AboutEDUTitle {
+    position: absolute;
+    padding-left: 7%;
+    padding-top: 7.5vw;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 65px;
+    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
 } 
-
+.AboutEDUFiller {
+    position: absolute;
+    padding-left: 7.25vw;
+    top: 29.5vw;
+    padding-right: 55vw;
+    text-align: left;
+    font-family: Flow Circular;
+    font-size: 25px;
+    background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+.AboutEDUText {
+    position: absolute;
+    top: 11vw;
+    padding-right: 55vw;
+    padding-left:7vw;
+    text-align: left;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 25px;
+    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+.WestBuilding {
+    position: absolute;
+    top: 18vw;
+    left: 65%;
+    border-radius: 10px;
+    z-index: 30;
+    width: 30%;
+}
+.WestBand {
+    position: absolute;
+    top: 23.5vw;
+    left: 48.5%;
+    border-radius: 10px;
+    z-index: 30;
+    width: 15%;
+}
+.WestAlbanyLogo {
+    position: absolute;
+    top: 18vw;
+    left: 55.5%;
+    border-radius: 10px;
+    z-index: 30;
+    width: 8%;
+}
 
 
 
 .MyProjects {
     position: absolute;
-    top:310%;
-    height: 100%;
+    top:255%;
+    height: 125%;
     width: 100%;
     background-color: #df293500;
     z-index: 30;

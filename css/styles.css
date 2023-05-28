@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    background-color: #DF2935;
 }
 /*Keyframe animation for Triangles & 'Hover' on the top of the page.*/
 @keyframes ArrowFade {
@@ -103,8 +104,8 @@ header {
     animation-delay: 4s;
 }
 body {
-    background-color: #151515;
-    height: 4000px;
+    background-color: #15151546;
+    height: 3000px;
     /*Overflow hidden due to Chrome creating Unnecessary scrollbars*/
     -ms-overflow-style: none;  
     scrollbar-width: none;
@@ -113,6 +114,7 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
 /*Square at top of page user hovers over to see name and triangles*/
 #SquareAnim {
     position: absolute;
@@ -157,8 +159,7 @@ body::-webkit-scrollbar {
     height: 30px;
     background-color:#FF6600;
     top: 48.5%;
-    left: 45%;
-    transform: translate(-50%,-50%);
+    left: 45vw;
     list-style: none; 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(90deg);
@@ -169,14 +170,14 @@ body::-webkit-scrollbar {
 }
 /*Orange Triangle on the right side of 'SquareAnim'*/
 #SideArrow2 {
-    left: 53.5%;
+    left: 52.5vw;
     transform: rotate(-90deg);
     background-color: #FF6600;
 }
 nav {
     position: absolute;
     top:100%;
-    height: 3900px;
+    height: 219.4vw;
     width: 100%;
     background-color: #000000;
 }
@@ -269,7 +270,7 @@ a:hover {
     position: relative;
     height: 43.5vw;
     width: 100%;
-    background-color: #21d19f79;
+    background-color: #21d19f00;
     z-index: 30;
 }
 .AboutSCTitle {
@@ -350,9 +351,9 @@ a:hover {
 
 .Education {
     position: relative;
-    height: 30%;
+    height: 30vw;
     width: 100%;
-    background-color: #06afd55e;
+    background-color: #06afd500;
     z-index: 30;
 }
 .AboutEDUTitle {
@@ -421,9 +422,9 @@ a:hover {
 
 .MyProjects {
     position: relative;
-    height: 125%;
+    height: 63vw;
     width: 100%;
-    background-color: #df29357a;
+    background-color: #df293500;
     z-index: 30;
 }
 .SCProjectTitle {
@@ -441,7 +442,7 @@ a:hover {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
-    top: 20%;
+    top: 11.5vw;
     font-family:'Josefin Sans', sans-serif;
     font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
@@ -454,7 +455,7 @@ a:hover {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
-    top: 33%;
+    top: 19.5vw;
     font-family:Flow Circular;
     font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
@@ -465,8 +466,9 @@ a:hover {
 }
 
 .PortfolioProject {
+    border-radius: 20px;
     position: absolute;
-    top: 34vw;
+    top: 35vw;
     left: 2.5vw;
     width: 30vw;
     height: 25vw;
@@ -474,11 +476,14 @@ a:hover {
 }
 .PortfolioPhoto {
     width: 100%;
+    border-radius: 20px;
+
 }
 
 .ResortProject {
+    border-radius: 20px;
     position: absolute;
-    top: 34vw;
+    top: 35vw;
     left: 33.25vw;
     width: 30vw;
     height: 25vw;
@@ -488,12 +493,15 @@ a:hover {
 .ResortPhoto {
     position: absolute;
     width: 100%;
-    top: 38%;
+    top: 9.75vw;
+    border-radius: 20px;
+
 }
 
 .BoringProject {
+    border-radius: 20px;
     position: absolute;
-    top: 34vw;
+    top: 35vw;
     left: 64vw;
     width: 30vw;
     height: 25vw;
@@ -502,19 +510,6 @@ a:hover {
 }
 .BoringPhoto {
     width: 100%;
+    border-radius: 20px;
 }
 
-
-
-
-
-
-
-footer {
-    position: absolute;
-    width: 100%;
-    height:500px;
-    background-color: #151515;
-    top: 500%;
-    z-index: 500;
-}

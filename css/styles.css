@@ -420,7 +420,7 @@ a:hover {
 
 
 .MyProjects {
-    position: relative;
+    position: absolute;
     height: 63vw;
     width: 100%;
     background-color: #df293500;
@@ -457,11 +457,30 @@ a:hover {
     top: 19.5vw;
     font-family:Flow Circular;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    background: -webkit-linear-gradient(90deg,#F9CB40,#F46036,#D7263D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
     text-align: center;
+}
+
+.ProjectName {
+    position: absolute;
+    font-family: Josefin Sans;
+    font-size: 2vw;
+    color: white;
+}
+.ProjectNameHov {
+    position: absolute;
+    font-family: Josefin Sans;
+    font-size: 2vw;
+    color: white;
+}
+.ProjectNameHov:hover {
+    filter: brightness(115%);
+}
+.ProjectNameHov:hover::after {
+    content: "*";
 }
 
 .PortfolioProject {
@@ -476,7 +495,26 @@ a:hover {
 .PortfolioPhoto {
     width: 100%;
     border-radius: 20px;
-
+}
+.PortTitle {
+    background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    padding-left: 0.5vw;
+    padding-top: 0.5vw;
+}
+.PortText {
+    font-size: 1vw;
+    font-family: Josefin Sans;
+    padding-top: 2.5vw;
+}
+.PortFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg,#21D19F,#06AED5,#4357AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
 }
 
 .ResortProject {
@@ -486,7 +524,7 @@ a:hover {
     left: 33.25vw;
     width: 30vw;
     height: 25vw;
-    background-color: #06AED5;
+    background-color: #ffffff;
     
 }
 .ResortPhoto {
@@ -494,7 +532,28 @@ a:hover {
     width: 100%;
     top: 9.75vw;
     border-radius: 20px;
-
+}
+.ResortTitle {
+    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-left: 8vw;
+    padding-top: 0.5vw;
+}
+.ResortText {
+    font-size: 1vw;
+    font-family: Josefin Sans;
+    padding-top: 2.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.ResortFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
 }
 
 .BoringProject {
@@ -505,10 +564,30 @@ a:hover {
     width: 30vw;
     height: 25vw;
     background-color: #000000;
-
 }
 .BoringPhoto {
     width: 100%;
     border-radius: 20px;
 }
-
+.BoringTitle {
+    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    padding-left: 7vw;
+    padding-top: 0.5vw;
+}
+.BoringText {
+    font-size: 1vw;
+    padding-top: 2.5vw;
+    padding-right: 1vw;
+    padding-left: 0.5vw;
+    font-family: Josefin Sans;
+}
+.BoringFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg,#F9CB40,#F46036,#D7263D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
+}

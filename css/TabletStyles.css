@@ -18,52 +18,168 @@
         z-index: 30;
     }
     .AboutSCTitle {
-        padding-left: 53.5%;
-        font-size: 10vw;
+        padding-left: 32%;
+        font-size: 15vw;
+        padding-top: 52vw;
     }
     .AboutSCText {
-        padding-left: 35%;
-        top: 12vw;
+        padding-left: 17%;
+        top: 65vw;
         font-size: 4vw;
     }
     .FillerSCText {
         padding-left: 25%;
-        top: 55vw;
+        top: 109vw;
         font-size: 4vw;
     }
     .SCPhoto {
-        position: absolute;
-        top: 3vw;
-        left: 2.5%;
-        border-radius: 10px;
-        transform: scaleX(-1);
-        z-index: 30;
-        width: 30%;
+        transform: scaleX(1);
+        width: 95vw;
+        height:47vw;
+        object-fit: cover;
+        object-position: 50% 25%;
     }
     .Truck {
-        position: absolute;
-        top: 45vw;
-        left: 2.5%;
-        border-radius: 10px;
-        transform: scaleX(-1);
-        z-index: 30;
-        width: 20%;
+        display: none;
     }
     .Kombucha {
-        position: absolute;
-        top: 11vw;
-        left: 22%;
-        border-radius: 10px;
-        z-index: 30;
-        width: 8%;
+        display: none;
     }
     .LightTruck {
+        display: none;
+    }
+    .Education {
+        top: 180vw;
+    }
+    .AboutEDUTitle {
+        padding-left: 1%;
+        padding-top: 1.5vw;
+        font-size: 15vw;
+
+    } 
+    .AboutEDUFiller {
         position: absolute;
-        top: 28vw;
-        left: 2.5%;
-        border-radius: 10px;
+        padding-left: 2.75vw;
+        top: 97vw;
+        padding-right: 20vw;
+        text-align: left;
+        font-family: Flow Circular;
+        font-size: 4vw;
+        background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         z-index: 30;
-        width: 9%;
-        transform: scaleX(-1);
+    }
+    .AboutEDUText {
+        top: 30vw;
+        padding-right: 20vw;
+        padding-left:2vw;
+        font-size: 4vw;
+    }
+    .WestBuilding {
+        top: 119vw;
+        left: 2vw;
+        width: 79vw;
+        height: 20vw;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+    .WestBand {
+        display: none;
+    }
+    .WestAlbanyLogo {
+        display: none;
+    }
+    .MyProjects {
+        top: 385vw;
+    }
+    .SCProjectTitle {
+        padding-right: 2%;
+        top: -11vw;
+        font-size: 15vw;
+        text-align: right;
+    }
+    .SCProjectText {
+        position: absolute;
+        padding-left: 17%;
+        padding-right: 2%;
+        top: 26vw;
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 4vw;
+
+        text-align: right;
+    }
+    .SCProjectFiller {
+        display: none;
+    }
+    .PortfolioProject {
+        top: 70vw;
+        left: 19vw;
+        width: 78vw;
+        height: 60vw;
+    }
+    .PortTitle {
+        font-size: 5vw;
+    }
+    .PortText {
+        font-size: 3vw;
+        font-family: Josefin Sans;
+        padding-top: 5.5vw;
+    }
+    .PortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+    .ResortProject {
+        top: 150vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw; 
+    }
+    .ResortPhoto {
+        position: absolute;
+        width: 100%;
+        top: 20vw;
+        border-radius: 20px;
+    }
+    .ResortTitle {
+        padding-left: 23vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+    .ResortText {
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        font-size: 3vw;
+        padding-top: 5.5vw;
+    }
+    .ResortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+    
+    .BoringProject {
+        top: 222vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw; 
+    }
+    .BoringTitle {
+        padding-left: 2vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+    .BoringText {
+        font-size: 2.5vw;
+        padding-top: 5vw;
+        padding-left: 2.25vw;
+        text-align: left;
+    }
+    .BoringFiller {
+        padding-left: 2.5vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
     }
 }

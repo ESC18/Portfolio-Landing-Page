@@ -1,25 +1,19 @@
-@media screen and (max-width:899px) {
+@media screen and (min-width:900px) and (max-width:1400px) {
     header {
         height: 150px;
-        clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 100% 90%);
+    }
+
+    .HeaderUnderlay {
+        height: 150px;
     }
 
     #SCLogo {
-        width: 16vw;
-        bottom: 1vh;
-    }
-
-    #SquareAnim {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .Triangle {
-        display: none;
+        width: 13vw;
+        bottom: -2vh;
     }
 
     nav {
-        height: 700vh;
+        height: 950vw;
     }
 
     .Navbarlinks {
@@ -27,7 +21,7 @@
     }
 
     .Underlay {
-        height: 55.3vh;
+        height: 60vh;
     }
 
     .Overlay {
@@ -240,5 +234,12 @@
         padding-left: 2.5vw;
         padding-top: 0.1vw;
         font-family: Flow Circular;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    #SCLogo {
+        width: 13vh;
+        bottom: -1vh;
     }
 }

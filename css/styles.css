@@ -4,21 +4,46 @@
     border: 0;
     box-sizing: border-box;
 }
+
 /*Keyframe animation for Triangles & 'Hover' on the top of the page.*/
 @keyframes ArrowFade {
-    0% {opacity:0%;}
-    50% {opacity:100%;}
-    100% {opacity:0%;}
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
 }
+
 @keyframes SquareAnimColor {
-    0% {background-position:0% 10%}
-    50% {background-position:0% 700%}
-    100% {background-position:0% 10%}
+    0% {
+        background-position: 0% 10%
+    }
+
+    50% {
+        background-position: 0% 700%
+    }
+
+    100% {
+        background-position: 0% 10%
+    }
 }
+
 @keyframes rotate {
-    0% {transform:rotate(0deg)}
-    100% {transform:rotate(360deg)}
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
+
 header {
     position: absolute;
     top: 0px;
@@ -28,47 +53,52 @@ header {
     clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 40% 90%, 45% 100%, 55% 100%, 60% 90%, 100% 90%);
     z-index: 200;
 }
+
 .HeaderUnderlay {
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100px;
-    background: linear-gradient(0deg,#F3B700,#F18701,#DF2935,#961f01,#961f01,#DF2935,#F18701,#F3B700);
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 700%;
-    animation:SquareAnimColor;
+    animation: SquareAnimColor;
     animation-duration: 240s;
     animation-iteration-count: infinite;
 }
+
 #SCLogo {
     position: absolute;
-    width: 7vw;
-    bottom: -3.5vh;
+    width: 6.5vw;
+    bottom: -2.5vh;
     left: 50%;
     transform: translate(-50%);
     display: block;
 }
+
 .Name {
     position: absolute;
     color: #151515;
     font-size: 4vh;
     font-family: 'Quicksand', sans-serif;
-    top:25%;
+    top: 25%;
     left: 25%;
-    transform: translate(-25%,-25%);
+    transform: translate(-25%, -25%);
     z-index: 30;
 }
+
 .Text1 {
     position: absolute;
     color: #151515;
     font-size: 4vh;
     text-align: right;
     font-family: Quicksand;
-    top:75%;
+    top: 75%;
     left: 75%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     z-index: 30;
-} 
+}
+
 .Triangle {
     position: absolute;
     width: 50px;
@@ -78,54 +108,61 @@ header {
     z-index: 30;
     top: 56%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg);
     animation-name: ArrowFade;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
 }
+
 .T2 {
     top: 26%;
     animation-delay: 0s;
 }
+
 .T3 {
     top: 41%;
     animation-delay: 1s;
 }
+
 .T4 {
     top: 71%;
     animation-delay: 3s;
 }
+
 .T5 {
     top: 86%;
     animation-delay: 4s;
 }
+
 body {
     background-color: #151515;
     overflow-x: hidden;
 }
+
 #SquareAnim {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: linear-gradient(0deg,#F3B700,#F18701,#DF2935,#961f01,#961f01,#DF2935,#F18701,#F3B700);
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 700%;
-    animation:SquareAnimColor;
+    animation: SquareAnimColor;
     animation-duration: 240s;
     animation-iteration-count: infinite;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 20;
     transition: all 0.15s;
 
 
 }
+
 #SquareAnim::after {
     position: absolute;
     content: "Hover";
     top: 80px;
-    left:-17px;
+    left: -17px;
     animation-name: ArrowFade;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -135,6 +172,7 @@ body {
 
 
 }
+
 #SquareAnim:hover {
     width: 120vw;
     height: 100%;
@@ -143,14 +181,15 @@ body {
     color: rgba(255, 255, 255, 0);
 
 }
+
 .SideArrow {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color:#FF6600;
+    background-color: #FF6600;
     top: 48.5%;
     left: 45vw;
-    list-style: none; 
+    list-style: none;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(90deg);
     animation-name: ArrowFade;
@@ -158,18 +197,31 @@ body {
     animation-iteration-count: infinite;
     z-index: 10;
 }
-#SideArrow2 {
-    left: 52.5vw;
-    transform: rotate(-90deg);
+
+.SideArrow2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
     background-color: #FF6600;
+    top: 48.5%;
+    right: 45vw;
+    list-style: none;
+    clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
+    transform: rotate(90deg);
+    animation-name: ArrowFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 10;
 }
+
 nav {
     position: absolute;
-    top:100%;
-    height: 219.4vw;
+    top: 100%;
+    height: 209vw;
     width: 100%;
     background-color: #000000;
 }
+
 .Navbar {
     width: 100%;
     background-color: #000000;
@@ -184,6 +236,7 @@ nav {
     font-size: 2vw;
     list-style: none;
 }
+
 .Navbarlinks li {
     display: list-item;
     float: left;
@@ -192,59 +245,70 @@ nav {
     width: 33.33%;
     text-align: center;
 }
+
 .Navbarlinks li a {
     display: block;
     color: #ffffff;
     border-top: 5px solid #FF6600;
     border-bottom: 5px solid #FF6600;
     transition: all 0.2s;
-    background: linear-gradient(0deg,#F3B700,#F18701,#DF2935,#961f01,#961f01,#DF2935,#F18701,#F3B700);
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 700%;
-    animation:SquareAnimColor;
+    animation: SquareAnimColor;
     animation-duration: 240s;
     animation-iteration-count: infinite;
 }
+
 .Navbarlinks li a:hover {
     border: 7px solid aliceblue;
     transition: all 0.2s;
 }
+
 /*Lines 186-200 are for making anchor tags not have any additional decor or change colors upon hover/active/link/visited.*/
 a {
     text-decoration: none;
 }
+
 a:link {
     color: #FF6600;
 }
+
 a:visited {
     color: #FF6600;
 }
+
 a:active {
     color: #FF6600;
 }
+
 a:hover {
     color: #ff3c00;
 }
+
 .Content {
     position: absolute;
     width: 100%;
     top: 105%;
     height: 3000px;
 }
-.Underlay{
+
+.Underlay {
     position: sticky;
     width: 100%;
-    height: 55.3vh;
-    background: linear-gradient(180deg,#F3B700,#F18701,#DF2935,#961f01);
+    height: 79vh;
+    background: linear-gradient(180deg, #F3B700, #F18701, #DF2935, #961f01);
     background-size: 100% 150%;
     z-index: 1;
     top: 0;
 }
+
 .Overlay {
     position: absolute;
     top: 105%;
     width: 100%;
     z-index: 20;
 }
+
 .Overlay2 {
     position: absolute;
     top: 105%;
@@ -252,13 +316,16 @@ a:hover {
     z-index: 20;
     display: none;
 }
+
 .image {
     transition: all 0.2s;
 }
+
 .image:hover {
     filter: brightness(115%) saturate(115%);
     transition: 0.2s;
 }
+
 .AboutMe {
     top: 0;
     position: relative;
@@ -267,30 +334,33 @@ a:hover {
     background-color: #21d19f00;
     z-index: 30;
 }
+
 .AboutSCTitle {
     position: absolute;
     padding-left: 81%;
     padding-top: 3.5vw;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3.4vw;
-    background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .AboutSCText {
     position: absolute;
     padding-left: 45%;
     top: 7vw;
     padding-right: 3.75%;
     text-align: right;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .FillerSCText {
     position: absolute;
     padding-left: 45%;
@@ -299,11 +369,12 @@ a:hover {
     text-align: right;
     font-family: Flow Circular;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#21D19F,#06AED5,#4357AD);
+    background: -webkit-linear-gradient(90deg, #21D19F, #06AED5, #4357AD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .SCPhoto {
     position: absolute;
     top: 3vw;
@@ -313,6 +384,7 @@ a:hover {
     z-index: 30;
     width: 18%;
 }
+
 .Truck {
     position: absolute;
     top: 3vw;
@@ -322,6 +394,7 @@ a:hover {
     z-index: 30;
     width: 10%;
 }
+
 .Kombucha {
     position: absolute;
     top: 11vw;
@@ -330,6 +403,7 @@ a:hover {
     z-index: 30;
     width: 8%;
 }
+
 .LightTruck {
     position: absolute;
     top: 28vw;
@@ -350,17 +424,19 @@ a:hover {
     background-color: #06afd500;
     z-index: 30;
 }
+
 .AboutEDUTitle {
     position: absolute;
     padding-left: 7%;
     padding-top: 1.5vw;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3.4vw;
-    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
-} 
+}
+
 .AboutEDUFiller {
     position: absolute;
     padding-left: 7.25vw;
@@ -369,24 +445,26 @@ a:hover {
     text-align: left;
     font-family: Flow Circular;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
+    background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .AboutEDUText {
     position: absolute;
     top: 5vw;
     padding-right: 55vw;
-    padding-left:7vw;
+    padding-left: 7vw;
     text-align: left;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .WestBuilding {
     position: absolute;
     top: 11vw;
@@ -395,6 +473,7 @@ a:hover {
     z-index: 30;
     width: 30%;
 }
+
 .WestBand {
     position: absolute;
     top: 16.5vw;
@@ -403,6 +482,7 @@ a:hover {
     z-index: 30;
     width: 15%;
 }
+
 .WestAlbanyLogo {
     position: absolute;
     top: 11vw;
@@ -421,38 +501,41 @@ a:hover {
     background-color: #df293500;
     z-index: 30;
 }
+
 .SCProjectTitle {
     position: absolute;
     padding-left: 39%;
     padding-top: 7.5vw;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3.4vw;
-    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
 }
+
 .SCProjectText {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
     top: 11.5vw;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
     text-align: center;
 }
+
 .SCProjectFiller {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
     top: 17vw;
-    font-family:Flow Circular;
+    font-family: Flow Circular;
     font-size: 1.4vw;
-    background: -webkit-linear-gradient(90deg,#F9CB40,#F46036,#D7263D);
+    background: -webkit-linear-gradient(90deg, #F9CB40, #F46036, #D7263D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 30;
@@ -465,15 +548,18 @@ a:hover {
     font-size: 2vw;
     color: white;
 }
+
 .ProjectNameHov {
     position: absolute;
     font-family: Josefin Sans;
     font-size: 2vw;
     color: white;
 }
+
 .ProjectNameHov:hover {
     filter: brightness(115%);
 }
+
 .ProjectNameHov:hover::after {
     content: "*";
 }
@@ -487,26 +573,30 @@ a:hover {
     height: 25vw;
     background-color: #DF2935;
 }
+
 .PortfolioPhoto {
     width: 100%;
     border-radius: 20px;
 }
+
 .PortTitle {
-    background: -webkit-linear-gradient(90deg,#4357AD,#06AED5, #21D19F);
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: left;
     padding-left: 0.5vw;
     padding-top: 0.5vw;
 }
+
 .PortText {
     font-size: 1vw;
     font-family: Josefin Sans;
     padding-top: 2.5vw;
 }
+
 .PortFiller {
     font-family: Flow Circular;
-    background: -webkit-linear-gradient(90deg,#21D19F,#06AED5,#4357AD);
+    background: -webkit-linear-gradient(90deg, #21D19F, #06AED5, #4357AD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 0vw;
@@ -520,22 +610,25 @@ a:hover {
     width: 30vw;
     height: 25vw;
     background-color: #ffffff;
-    
+
 }
+
 .ResortPhoto {
     position: absolute;
     width: 100%;
     top: 9.75vw;
     border-radius: 20px;
 }
+
 .ResortTitle {
-    background: -webkit-linear-gradient(90deg,#988F2A,#21D19F,#FFE066 );
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     padding-left: 8vw;
     padding-top: 0.5vw;
 }
+
 .ResortText {
     font-size: 1vw;
     font-family: Josefin Sans;
@@ -543,9 +636,10 @@ a:hover {
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 }
+
 .ResortFiller {
     font-family: Flow Circular;
-    background: -webkit-linear-gradient(90deg,#FFE066,#21D19F,#988F2A);
+    background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 0vw;
@@ -560,18 +654,21 @@ a:hover {
     height: 25vw;
     background-color: #000000;
 }
+
 .BoringPhoto {
     width: 100%;
     border-radius: 20px;
 }
+
 .BoringTitle {
-    background: -webkit-linear-gradient(90deg,#D7263D,#F46036,#F9CB40);
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: right;
     padding-left: 7vw;
     padding-top: 0.5vw;
 }
+
 .BoringText {
     font-size: 1vw;
     padding-top: 2.5vw;
@@ -579,9 +676,10 @@ a:hover {
     padding-left: 0.5vw;
     font-family: Josefin Sans;
 }
+
 .BoringFiller {
     font-family: Flow Circular;
-    background: -webkit-linear-gradient(90deg,#F9CB40,#F46036,#D7263D);
+    background: -webkit-linear-gradient(90deg, #F9CB40, #F46036, #D7263D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 0vw;

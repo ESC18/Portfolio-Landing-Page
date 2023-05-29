@@ -16,14 +16,14 @@
         left: 35%;
         text-align: center;
     }
-    
+
     .Text1 {
         font-size: 10vw;
         text-align: center;
         top: 85vh;
         left: 50vw;
     }
-    
+
     .Triangle {
         display: none;
     }
@@ -39,7 +39,7 @@
     .Navbarlinks {
         font-size: 7.8vw;
     }
-    
+
     .AboutSCTitle {
         padding-left: 32%;
         font-size: 15vw;
@@ -151,7 +151,7 @@
     }
 
     .BoringTitle {
-        font-size:11vw;
+        font-size: 11vw;
         text-align: left;
     }
 
@@ -164,6 +164,4 @@
     }
 }
 
-@media screen and (max-width:700px) {
-    
-}
+@media screen and (max-width:700px) {}

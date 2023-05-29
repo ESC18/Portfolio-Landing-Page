@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/*Keyframe animation for Triangles & 'Hover' on the top of the page.*/
 @keyframes ArrowFade {
     0% {
         opacity: 0%;
@@ -264,7 +263,6 @@ nav {
     transition: all 0.2s;
 }
 
-/*Lines 186-200 are for making anchor tags not have any additional decor or change colors upon hover/active/link/visited.*/
 a {
     text-decoration: none;
 }

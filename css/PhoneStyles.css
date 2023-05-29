@@ -1,8 +1,9 @@
-@media screen and (max-width:1280px) {
+@media screen and (max-width:835px) {
     header {height: 150px;}
     .HeaderUnderlay {height: 150px;}
     #SCLogo {width: 17vw; bottom: -1vh;}
     #SquareAnim {width: 100vw; height: 100vh;}
+    .Triangle {display: none;}
     .SideArrow {display: none;}
     nav {height: 950vw;}
     .Navbarlinks {font-size: 4vw;}

@@ -22,7 +22,7 @@
 header {
     position: absolute;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: black;
     clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 40% 90%, 45% 100%, 55% 100%, 60% 90%, 100% 90%);
@@ -41,8 +41,8 @@ header {
 }
 #SCLogo {
     position: absolute;
-    width: 120px;
-    bottom: -20px;
+    width: 7vw;
+    bottom: -3.5vh;
     left: 50%;
     transform: translate(-50%);
     display: block;
@@ -50,7 +50,7 @@ header {
 .Name {
     position: absolute;
     color: #151515;
-    font-size: 40px;
+    font-size: 4vh;
     font-family: 'Quicksand', sans-serif;
     top:25%;
     left: 25%;
@@ -60,7 +60,7 @@ header {
 .Text1 {
     position: absolute;
     color: #151515;
-    font-size: 40px;
+    font-size: 4vh;
     text-align: right;
     font-family: Quicksand;
     top:75%;
@@ -68,9 +68,7 @@ header {
     transform: translate(-50%,-50%);
 
     z-index: 30;
-} /*Lines 54-84 are utilized for the small black triangles used to guide user down the page upon Square hover.*/
-
-/*This code struggles with being responive - causes triangles to be visible when screen shrinks due to 'SquareAnim' going under them.*/
+} 
 .Triangle {
     position: absolute;
     width: 50px;
@@ -104,17 +102,8 @@ header {
 }
 body {
     background-color: #151515;
-    height: 3000px;
-    /*Overflow hidden due to Chrome creating Unnecessary scrollbars*/
-    -ms-overflow-style: none;  
-    scrollbar-width: none;
     overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/*Square at top of page user hovers over to see name and triangles*/
 #SquareAnim {
     position: absolute;
     width: 50px;
@@ -129,6 +118,8 @@ body::-webkit-scrollbar {
     transform: translate(-50%,-50%);
     z-index: 20;
     transition: all 0.15s;
+
+
 }
 #SquareAnim::after {
     position: absolute;
@@ -141,17 +132,17 @@ body::-webkit-scrollbar {
     font-size: 30px;
     color: #FF6600;
     font-family: 'Josefin Sans', sans-serif;
+
+
 }
 #SquareAnim:hover {
-    width: 110%;
+    width: 120vw;
     height: 100%;
     transition: all 0.2s;
     opacity: 100%;
     color: rgba(255, 255, 255, 0);
-}
-/*CSS rule for two orange triangles next to 'SquareAnim' Square at top of page.*/
 
-/*This code struggles with being responsive - triangles merge into 'SquareAnim'*/
+}
 .SideArrow {
     position: absolute;
     width: 30px;
@@ -167,7 +158,6 @@ body::-webkit-scrollbar {
     animation-iteration-count: infinite;
     z-index: 10;
 }
-/*Orange Triangle on the right side of 'SquareAnim'*/
 #SideArrow2 {
     left: 52.5vw;
     transform: rotate(-90deg);
@@ -191,7 +181,7 @@ nav {
 
 .Navbarlinks {
     text-decoration: none;
-    font-size: 35px;
+    font-size: 2vw;
     list-style: none;
 }
 .Navbarlinks li {
@@ -216,7 +206,6 @@ nav {
 }
 .Navbarlinks li a:hover {
     border: 7px solid aliceblue;
-    font-size: 45px;
     transition: all 0.2s;
 }
 /*Lines 186-200 are for making anchor tags not have any additional decor or change colors upon hover/active/link/visited.*/
@@ -239,15 +228,14 @@ a:hover {
     position: absolute;
     width: 100%;
     top: 105%;
-    height: 2000px;
+    height: 3000px;
 }
 .Underlay{
     position: sticky;
     width: 100%;
-    height: 27.5vw;
+    height: 55.3vh;
     background: linear-gradient(180deg,#F3B700,#F18701,#DF2935,#961f01);
     background-size: 100% 150%;
-
     z-index: 1;
     top: 0;
 }
@@ -257,6 +245,13 @@ a:hover {
     width: 100%;
     z-index: 20;
 }
+.Overlay2 {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}
 .image {
     transition: all 0.2s;
 }
@@ -264,8 +259,8 @@ a:hover {
     filter: brightness(115%) saturate(115%);
     transition: 0.2s;
 }
-/*This Section forward is for the "About Me" Section*/
 .AboutMe {
+    top: 0;
     position: relative;
     height: 43.5vw;
     width: 100%;
@@ -299,7 +294,7 @@ a:hover {
 .FillerSCText {
     position: absolute;
     padding-left: 45%;
-    top: 21vw;
+    top: 16.5vw;
     padding-right: 3.90%;
     text-align: right;
     font-family: Flow Circular;
@@ -454,7 +449,7 @@ a:hover {
     position: absolute;
     padding-left: 7%;
     padding-right: 7%;
-    top: 19.5vw;
+    top: 17vw;
     font-family:Flow Circular;
     font-size: 1.4vw;
     background: -webkit-linear-gradient(90deg,#F9CB40,#F46036,#D7263D);

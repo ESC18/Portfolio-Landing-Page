@@ -410,6 +410,7 @@ a:hover {
     z-index: 30;
     width: 9%;
     transform: scaleX(-1);
+    display: inline-block;
 }
 
 
@@ -806,6 +807,7 @@ a:hover {
     }
     
     .LightTruck {
+        display: inline-block;
         position: absolute;
         top: 29vw;
         left: 2.5%;

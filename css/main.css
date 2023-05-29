@@ -1,0 +1,1334 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@keyframes ArrowFade {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes SquareAnimColor {
+    0% {
+        background-position: 0% 10%
+    }
+
+    50% {
+        background-position: 0% 700%
+    }
+
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 40% 90%, 45% 100%, 55% 100%, 60% 90%, 100% 90%);
+    z-index: 200;
+}
+
+.HeaderUnderlay {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
+    background-size: 300% 700%;
+    animation: SquareAnimColor;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+}
+
+#SCLogo {
+    position: absolute;
+    width: 6.5vw;
+    bottom: -2.5vh;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+}
+
+.Name {
+    position: absolute;
+    color: #151515;
+    font-size: 4vh;
+    font-family: 'Quicksand', sans-serif;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    z-index: 30;
+}
+
+.Text1 {
+    position: absolute;
+    color: #151515;
+    font-size: 4vh;
+    text-align: right;
+    font-family: Quicksand;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+
+    z-index: 30;
+}
+
+.Triangle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(50% 55%, 0% 100%, 100% 100%);
+    background-color: #151515;
+    z-index: 30;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    animation-name: ArrowFade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.T2 {
+    top: 26%;
+    animation-delay: 0s;
+}
+
+.T3 {
+    top: 41%;
+    animation-delay: 1s;
+}
+
+.T4 {
+    top: 71%;
+    animation-delay: 3s;
+}
+
+.T5 {
+    top: 86%;
+    animation-delay: 4s;
+}
+
+body {
+    background-color: #151515;
+    overflow-x: hidden;
+}
+
+#SquareAnim {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
+    background-size: 300% 700%;
+    animation: SquareAnimColor;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    transition: all 0.15s;
+
+
+}
+
+#SquareAnim::after {
+    position: absolute;
+    content: "Hover";
+    top: 80px;
+    left: -17px;
+    animation-name: ArrowFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    color: #FF6600;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+#SquareAnim:hover {
+    width: 120vw;
+    height: 100%;
+    transition: all 0.2s;
+    opacity: 100%;
+    color: rgba(255, 255, 255, 0);
+
+}
+
+.SideArrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FF6600;
+    top: 48.5%;
+    left: 43vw;
+    list-style: none;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+    animation-name: ArrowFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+
+.SideArrow2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FF6600;
+    top: 48.5%;
+    right: 43vw;
+    list-style: none;
+    clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
+    transform: rotate(90deg);
+    animation-name: ArrowFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    height: 209vw;
+    width: 100%;
+    background-color: #000000;
+}
+
+.Navbar {
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 50;
+}
+
+.Navbarlinks {
+    text-decoration: none;
+    font-size: 2vw;
+    list-style: none;
+}
+
+.Navbarlinks li {
+    display: list-item;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.Navbarlinks li a {
+    display: block;
+    color: #ffffff;
+    border-top: 5px solid #FF6600;
+    border-bottom: 5px solid #FF6600;
+    transition: all 0.2s;
+    background: linear-gradient(0deg, #F3B700, #F18701, #DF2935, #961f01, #961f01, #DF2935, #F18701, #F3B700);
+    background-size: 300% 700%;
+    animation: SquareAnimColor;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+}
+
+.Navbarlinks li a:hover {
+    border: 7px solid aliceblue;
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #FF6600;
+}
+
+a:visited {
+    color: #FF6600;
+}
+
+a:active {
+    color: #FF6600;
+}
+
+a:hover {
+    color: #ff3c00;
+}
+
+.Content {
+    position: absolute;
+    width: 100%;
+    top: 105%;
+    height: 3000px;
+}
+
+.Underlay {
+    position: sticky;
+    width: 100%;
+    height: 79vh;
+    background: linear-gradient(180deg, #F3B700, #F18701, #DF2935, #961f01);
+    background-size: 100% 150%;
+    z-index: 1;
+    top: 0;
+}
+
+.Overlay {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    z-index: 20;
+}
+
+.Overlay2 {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}
+
+.image {
+    transition: all 0.2s;
+}
+
+.image:hover {
+    filter: brightness(115%) saturate(115%);
+    transition: 0.2s;
+}
+
+.AboutMe {
+    top: 0;
+    position: relative;
+    height: 43.5vw;
+    width: 100%;
+    background-color: #21d19f00;
+    z-index: 30;
+}
+
+.AboutSCTitle {
+    position: absolute;
+    padding-left: 81%;
+    padding-top: 3.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.4vw;
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.AboutSCText {
+    position: absolute;
+    padding-left: 45%;
+    top: 7vw;
+    padding-right: 3.75%;
+    text-align: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.FillerSCText {
+    position: absolute;
+    padding-left: 45%;
+    top: 16.5vw;
+    padding-right: 3.90%;
+    text-align: right;
+    font-family: Flow Circular;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #21D19F, #06AED5, #4357AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.SCPhoto {
+    position: absolute;
+    top: 3vw;
+    left: 2.5%;
+    border-radius: 10px;
+    transform: scaleX(-1);
+    z-index: 30;
+    width: 18%;
+}
+
+.Truck {
+    position: absolute;
+    top: 3vw;
+    left: 22%;
+    border-radius: 10px;
+    transform: scaleX(-1);
+    z-index: 30;
+    width: 10%;
+}
+
+.Kombucha {
+    position: absolute;
+    top: 11vw;
+    left: 22%;
+    border-radius: 10px;
+    z-index: 30;
+    width: 8%;
+}
+
+.LightTruck {
+    position: absolute;
+    top: 28vw;
+    left: 2.5%;
+    border-radius: 10px;
+    z-index: 30;
+    width: 9%;
+    transform: scaleX(-1);
+}
+
+
+
+
+.Education {
+    position: relative;
+    height: 30vw;
+    width: 100%;
+    background-color: #06afd500;
+    z-index: 30;
+}
+
+.AboutEDUTitle {
+    position: absolute;
+    padding-left: 7%;
+    padding-top: 1.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.4vw;
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.AboutEDUFiller {
+    position: absolute;
+    padding-left: 7.25vw;
+    top: 23vw;
+    padding-right: 55vw;
+    text-align: left;
+    font-family: Flow Circular;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.AboutEDUText {
+    position: absolute;
+    top: 5vw;
+    padding-right: 55vw;
+    padding-left: 7vw;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.WestBuilding {
+    position: absolute;
+    top: 11vw;
+    left: 67vw;
+    border-radius: 10px;
+    z-index: 30;
+    width: 30%;
+}
+
+.WestBand {
+    position: absolute;
+    top: 16.5vw;
+    left: 51vw;
+    border-radius: 10px;
+    z-index: 30;
+    width: 15%;
+}
+
+.WestAlbanyLogo {
+    position: absolute;
+    top: 11vw;
+    left: 58vw;
+    border-radius: 10px;
+    z-index: 30;
+    width: 8%;
+}
+
+
+
+.MyProjects {
+    position: absolute;
+    height: 63vw;
+    width: 100%;
+    background-color: #df293500;
+    z-index: 30;
+}
+
+.SCProjectTitle {
+    position: absolute;
+    padding-left: 39%;
+    padding-top: 7.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.4vw;
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+}
+
+.SCProjectText {
+    position: absolute;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 11.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+    text-align: center;
+}
+
+.SCProjectFiller {
+    position: absolute;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 17vw;
+    font-family: Flow Circular;
+    font-size: 1.4vw;
+    background: -webkit-linear-gradient(90deg, #F9CB40, #F46036, #D7263D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 30;
+    text-align: center;
+}
+
+.ProjectName {
+    position: absolute;
+    font-family: Josefin Sans;
+    font-size: 2vw;
+    color: white;
+}
+
+.ProjectNameHov {
+    position: absolute;
+    font-family: Josefin Sans;
+    font-size: 2vw;
+    color: white;
+}
+
+.ProjectNameHov:hover {
+    filter: brightness(115%);
+}
+
+.ProjectNameHov:hover::after {
+    content: "*";
+}
+
+.PortfolioProject {
+    border-radius: 20px;
+    position: absolute;
+    top: 35vw;
+    left: 2.5vw;
+    width: 30vw;
+    height: 25vw;
+    background-color: #DF2935;
+}
+
+.PortfolioPhoto {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.PortTitle {
+    background: -webkit-linear-gradient(90deg, #4357AD, #06AED5, #21D19F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    padding-left: 0.5vw;
+    padding-top: 0.5vw;
+}
+
+.PortText {
+    font-size: 1vw;
+    font-family: Josefin Sans;
+    padding-top: 2.5vw;
+}
+
+.PortFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg, #21D19F, #06AED5, #4357AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
+}
+
+.ResortProject {
+    border-radius: 20px;
+    position: absolute;
+    top: 35vw;
+    left: 33.25vw;
+    width: 30vw;
+    height: 25vw;
+    background-color: #ffffff;
+
+}
+
+.ResortPhoto {
+    position: absolute;
+    width: 100%;
+    top: 9.75vw;
+    border-radius: 20px;
+}
+
+.ResortTitle {
+    background: -webkit-linear-gradient(90deg, #988F2A, #21D19F, #FFE066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-left: 8vw;
+    padding-top: 0.5vw;
+}
+
+.ResortText {
+    font-size: 1vw;
+    font-family: Josefin Sans;
+    padding-top: 2.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.ResortFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
+}
+
+.BoringProject {
+    border-radius: 20px;
+    position: absolute;
+    top: 35vw;
+    left: 64vw;
+    width: 30vw;
+    height: 25vw;
+    background-color: #000000;
+}
+
+.BoringPhoto {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.BoringTitle {
+    background: -webkit-linear-gradient(90deg, #D7263D, #F46036, #F9CB40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    padding-left: 7vw;
+    padding-top: 0.5vw;
+}
+
+.BoringText {
+    font-size: 1vw;
+    padding-top: 2.5vw;
+    padding-right: 1vw;
+    padding-left: 0.5vw;
+    font-family: Josefin Sans;
+}
+
+.BoringFiller {
+    font-family: Flow Circular;
+    background: -webkit-linear-gradient(90deg, #F9CB40, #F46036, #D7263D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0vw;
+}
+@media screen and (min-width:900px) and (max-width:1400px) {
+    header {
+        height: 150px;
+    }
+
+    .HeaderUnderlay {
+        height: 150px;
+    }
+
+    #SCLogo {
+        width: 13vw;
+        bottom: -2vh;
+    }
+
+    nav {
+        height: 950vw;
+    }
+
+    .Navbarlinks {
+        font-size: 4vw;
+    }
+
+    .Underlay {
+        height: 60vh;
+    }
+
+    .Overlay {
+        display: none;
+    }
+
+    .Overlay2 {
+        display: block;
+    }
+
+    .AboutMe {
+        top: 0;
+        position: relative;
+        height: 43.5vw;
+        width: 100%;
+        background-color: #21d19f00;
+        z-index: 30;
+    }
+
+    .AboutSCTitle {
+        padding-left: 32%;
+        font-size: 15vw;
+        padding-top: 52vw;
+    }
+
+    .AboutSCText {
+        padding-left: 17%;
+        top: 65vw;
+        font-size: 4vw;
+    }
+
+    .FillerSCText {
+        padding-left: 25%;
+        top: 109vw;
+        font-size: 4vw;
+    }
+
+    .SCPhoto {
+        transform: scaleX(1);
+        width: 95vw;
+        height: 47vw;
+        object-fit: cover;
+        object-position: 50% 25%;
+    }
+
+    .Truck {
+        display: none;
+    }
+
+    .Kombucha {
+        display: none;
+    }
+
+    .LightTruck {
+        display: none;
+    }
+
+    .Education {
+        top: 180vw;
+    }
+
+    .AboutEDUTitle {
+        padding-left: 1%;
+        padding-top: 1.5vw;
+        font-size: 15vw;
+
+    }
+
+    .AboutEDUFiller {
+        position: absolute;
+        padding-left: 2.75vw;
+        top: 97vw;
+        padding-right: 20vw;
+        text-align: left;
+        font-family: Flow Circular;
+        font-size: 4vw;
+        background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 30;
+    }
+
+    .AboutEDUText {
+        top: 30vw;
+        padding-right: 20vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+
+    .WestBuilding {
+        top: 119vw;
+        left: 2vw;
+        width: 79vw;
+        height: 20vw;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
+    .WestBand {
+        display: none;
+    }
+
+    .WestAlbanyLogo {
+        display: none;
+    }
+
+    .MyProjects {
+        top: 385vw;
+    }
+
+    .SCProjectTitle {
+        padding-right: 2%;
+        top: -11vw;
+        font-size: 15vw;
+        text-align: right;
+    }
+
+    .SCProjectText {
+        position: absolute;
+        padding-left: 17%;
+        padding-right: 2%;
+        top: 26vw;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4vw;
+
+        text-align: right;
+    }
+
+    .SCProjectFiller {
+        display: none;
+    }
+
+    .PortfolioProject {
+        top: 70vw;
+        left: 19vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .PortTitle {
+        font-size: 5vw;
+    }
+
+    .PortText {
+        font-size: 3vw;
+        font-family: Josefin Sans;
+        padding-top: 5.5vw;
+    }
+
+    .PortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+
+    .ResortProject {
+        top: 150vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .ResortPhoto {
+        position: absolute;
+        width: 100%;
+        top: 20vw;
+        border-radius: 20px;
+    }
+
+    .ResortTitle {
+        padding-left: 23vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .ResortText {
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        font-size: 3vw;
+        padding-top: 5.5vw;
+    }
+
+    .ResortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+
+    .BoringProject {
+        top: 222vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .BoringTitle {
+        padding-left: 2vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .BoringText {
+        font-size: 2.5vw;
+        padding-top: 5vw;
+        padding-left: 2.25vw;
+        text-align: left;
+    }
+
+    .BoringFiller {
+        padding-left: 2.5vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    #SCLogo {
+        width: 13vh;
+        bottom: -1vh;
+    }
+}
+@media screen and (max-width:899px) {
+    header {
+        height: 150px;
+        clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 100% 90%);
+    }
+
+    #SCLogo {
+        width: 16vw;
+        bottom: 1vh;
+    }
+
+    #SquareAnim {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Triangle {
+        display: none;
+    }
+
+    nav {
+        height: 700vh;
+    }
+
+    .Navbarlinks {
+        font-size: 4vw;
+    }
+
+    .Underlay {
+        height: 55.3vh;
+    }
+
+    .Overlay {
+        display: none;
+    }
+
+    .Overlay2 {
+        display: block;
+    }
+
+    .AboutMe {
+        top: 0;
+        position: relative;
+        height: 43.5vw;
+        width: 100%;
+        background-color: #21d19f00;
+        z-index: 30;
+    }
+
+    .AboutSCTitle {
+        padding-left: 32%;
+        font-size: 15vw;
+        padding-top: 52vw;
+    }
+
+    .AboutSCText {
+        padding-left: 17%;
+        top: 65vw;
+        font-size: 4vw;
+    }
+
+    .FillerSCText {
+        padding-left: 25%;
+        top: 109vw;
+        font-size: 4vw;
+    }
+
+    .SCPhoto {
+        transform: scaleX(1);
+        width: 95vw;
+        height: 47vw;
+        object-fit: cover;
+        object-position: 50% 25%;
+    }
+
+    .Truck {
+        display: none;
+    }
+
+    .Kombucha {
+        display: none;
+    }
+
+    .LightTruck {
+        display: none;
+    }
+
+    .Education {
+        top: 180vw;
+    }
+
+    .AboutEDUTitle {
+        padding-left: 1%;
+        padding-top: 1.5vw;
+        font-size: 15vw;
+
+    }
+
+    .AboutEDUFiller {
+        position: absolute;
+        padding-left: 2.75vw;
+        top: 97vw;
+        padding-right: 20vw;
+        text-align: left;
+        font-family: Flow Circular;
+        font-size: 4vw;
+        background: -webkit-linear-gradient(90deg, #FFE066, #21D19F, #988F2A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 30;
+    }
+
+    .AboutEDUText {
+        top: 30vw;
+        padding-right: 20vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+
+    .WestBuilding {
+        top: 119vw;
+        left: 2vw;
+        width: 79vw;
+        height: 20vw;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
+    .WestBand {
+        display: none;
+    }
+
+    .WestAlbanyLogo {
+        display: none;
+    }
+
+    .MyProjects {
+        top: 385vw;
+    }
+
+    .SCProjectTitle {
+        padding-right: 2%;
+        top: -11vw;
+        font-size: 15vw;
+        text-align: right;
+    }
+
+    .SCProjectText {
+        position: absolute;
+        padding-left: 17%;
+        padding-right: 2%;
+        top: 26vw;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4vw;
+
+        text-align: right;
+    }
+
+    .SCProjectFiller {
+        display: none;
+    }
+
+    .PortfolioProject {
+        top: 70vw;
+        left: 19vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .PortTitle {
+        font-size: 5vw;
+    }
+
+    .PortText {
+        font-size: 3vw;
+        font-family: Josefin Sans;
+        padding-top: 5.5vw;
+    }
+
+    .PortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+
+    .ResortProject {
+        top: 150vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .ResortPhoto {
+        position: absolute;
+        width: 100%;
+        top: 20vw;
+        border-radius: 20px;
+    }
+
+    .ResortTitle {
+        padding-left: 23vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .ResortText {
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        font-size: 3vw;
+        padding-top: 5.5vw;
+    }
+
+    .ResortFiller {
+        padding-left: 1vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+
+    .BoringProject {
+        top: 222vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .BoringTitle {
+        padding-left: 2vw;
+        padding-top: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .BoringText {
+        font-size: 2.5vw;
+        padding-top: 5vw;
+        padding-left: 2.25vw;
+        text-align: left;
+    }
+
+    .BoringFiller {
+        padding-left: 2.5vw;
+        padding-top: 0.1vw;
+        font-family: Flow Circular;
+    }
+}
+@media screen and (max-width:480px) {
+    header {
+        height: 150px;
+        clip-path: polygon(100% 0%, 0% 0%, 0% 90%, 100% 90%);
+
+    }
+
+    #SCLogo {
+        width: 30vw;
+        bottom: 2vh;
+    }
+
+    .Name {
+        font-size: 10vw;
+        top: 27vw;
+        left: 35vw;
+        text-align: center;
+    }
+
+    .Text1 {
+        font-size: 10vw;
+        text-align: center;
+        top: 85vh;
+        left: 50vw;
+    }
+
+    .Triangle {
+        display: none;
+    }
+
+    nav {
+        height: 975vw;
+    }
+
+    .Underlay {
+        height: 75vh;
+    }
+
+    .AboutSCTitle {
+        padding-left: 32%;
+        font-size: 15vw;
+        padding-top: 52vw;
+    }
+
+    .AboutSCText {
+        padding-left: 17%;
+        top: 65vw;
+        font-size: 5vw;
+    }
+
+    .FillerSCText {
+        padding-left: 35%;
+        top: 129vw;
+        font-size: 4vw;
+    }
+
+    .SCPhoto {
+        transform: scaleX(1);
+        top: 15vw;
+        width: 95vw;
+        height: 35vw;
+        object-fit: cover;
+        object-position: 50% 25%;
+    }
+
+    .Education {
+        top: 180vw;
+    }
+
+    .AboutEDUTitle {
+        padding-left: 1%;
+        padding-top: 1.5vw;
+        font-size: 15vw;
+
+    }
+
+    .AboutEDUFiller {
+        display: none;
+    }
+
+    .AboutEDUText {
+        top: 30vw;
+        padding-right: 21vw;
+        padding-left: 2vw;
+        font-size: 5vw;
+    }
+
+    .WestBuilding {
+        top: -40vw;
+        left: 2vw;
+        width: 96vw;
+        height: 35vw;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
+    .SCProjectTitle {
+        padding-right: 2%;
+        top: -11vw;
+        font-size: 15vw;
+        text-align: right;
+    }
+
+    .SCProjectText {
+        font-size: 5vw;
+    }
+
+    .SCProjectFiller {
+        display: inline-block;
+        padding-left: 17vw;
+        padding-right: 2vw;
+        top: 90vw;
+        font-size: 4vw;
+        text-align: right;
+    }
+
+    .PortfolioProject {
+        display: none;
+    }
+
+    .ResortPhoto {
+        position: absolute;
+        width: 100%;
+        top: 20vw;
+        border-radius: 20px;
+    }
+
+    .ResortTitle {
+        padding-left: 2vw;
+        padding-top: 4vw;
+        font-size: 11vw;
+    }
+
+    .ResortText {
+        display: none;
+    }
+
+    .ResortFiller {
+        display: none;
+    }
+
+    .BoringProject {
+        top: 222vw;
+        left: 2vw;
+        width: 78vw;
+        height: 60vw;
+    }
+
+    .BoringTitle {
+        font-size: 11vw;
+        text-align: left;
+    }
+
+    .BoringText {
+        display: none;
+    }
+
+    .BoringFiller {
+        display: none;
+    }
+}
